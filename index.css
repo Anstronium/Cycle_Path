@@ -1,0 +1,111 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.animationContainer {
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+}
+#rideButton {
+  width: fit-content;
+  height: 60px;
+  width: 110px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #4627cd;
+  background: white;
+  font-size: larger;
+  font-family: inherit;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.8s;
+  z-index: 100;
+}
+#rideButton:hover {
+  background: rgb(228, 228, 228);
+}
+#mainContainer {
+  padding-left: 60px;
+  display: flex;
+  background: #e0c3fc;
+  height: 90vh;
+  overflow: auto;
+}
+.container_items {
+  width: 50%;
+}
+#cycleAnimation {
+  width: 90%;
+  transition: all 10s;
+}
+.primary_input {
+  transition: all 0.3s;
+  width: 70%;
+  height: 1rem;
+  margin-bottom: 10px;
+}
+.primary_input:focus {
+  box-shadow: 1px 1px 10px white;
+}
+#rightMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: opacity 0.3s;
+}
+#leftMain {
+  transition: all 2s;
+  overflow: hidden;
+}
+svg {
+  width: 30px;
+}
+.dst {
+  background: #4627cd;
+  color: white;
+  font-family: inherit;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+a {
+  text-decoration: none;
+  font-size: larger;
+  color: #4627cd;
+  font-weight: 800;
+}
+footer {
+  margin-left: 55px;
+  background: #4627cd;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer > a > svg {
+  color: #050505;
+  background: white;
+  padding: 10px;
+  border-radius: 50px;
+  margin: 20px;
+}
+@media screen and (max-width: 480px) {
+  #mainContainer {
+    flex-direction: column;
+  }
+  .container_items {
+    width: 100%;
+    min-height: 300px;
+  }
+  #cycleAnimation {
+    width: 100%;
+  }
+  .primary_input {
+    width: 90%;
+  }
+}
